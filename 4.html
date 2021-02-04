@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>ОЧКИ: <span class="score"></span></h1>
+<button class="button">Поменять сумму</button>
+
+<script type="text/javascript">
+	//создай переменную score которая хранит 20
+	//выведи значение переменной score в тег span
+	let score = 0;
+	document.querySelector('.score').innerHTML = score
+	document.querySelector('.button').onclick = function(){
+		score = score + 1
+		document.querySelector('.score').innerHTML = score
+	}
+	
+</script>
+</body>
+</html>
